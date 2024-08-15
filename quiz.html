@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Kesehatan Mental</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .question {
+            font-weight: bold;
+        }
+
+        select {
+            width: 150px;
+        }
+
+        button {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Kalkulator Kesehatan Mental</h1>
+        <br>
+        <p>
+            Selamat datang di Kalkulator Tingkat Stres kami, alat yang dirancang khusus untuk membantu Anda memahami dan mengelola tingkat stres Anda. Kami memahami betapa pentingnya kesehatan mental dan kesejahteraan Anda dalam menghadapi tekanan sehari-hari. Kalkulator ini dibuat untuk memberikan wawasan tentang sejauh mana stres dapat memengaruhi hidup Anda dan membantu Anda mengambil langkah-langkah menuju gaya hidup yang lebih seimbang dan sehat.
+        </p>
+        <h2>
+            Tujuan Kalkulator Tingkat Stress:
+        </h2>
+        <p>
+            Kalkulator ini bertujuan untuk memberikan Anda pemahaman yang lebih baik tentang tingkat stres yang Anda alami. Ini adalah langkah awal penting dalam mengenali stres dan dampaknya terhadap kesejahteraan Anda. Dengan menyadari tingkat stres Anda, Anda dapat mengambil langkah-langkah proaktif untuk menguranginya dan menghindari efek negatif yang mungkin timbul.
+        </p>
+        <h2>
+            Cara Kerja Tingkat Stress:
+        </h2>
+        <p>
+            Kalkulator ini bekerja dengan mengajukan serangkaian pertanyaan tentang perasaan dan pengalaman Anda sehari-hari. Anda akan diminta untuk memberikan respons terhadap pertanyaan ini dengan jujur. Berdasarkan jawaban Anda, kalkulator akan menghitung skor tingkat stres Anda. Semakin tinggi skornya, semakin besar tingkat stres yang Anda alami. Namun, jangan khawatir, skor ini hanya sebagai panduan awal untuk mengevaluasi kondisi Anda.
+        </p>
+        <h2>
+            Manfaat yang Ditawarkan:
+        </h2>
+        <p>
+            1. Pemahaman Lebih Baik: Kalkulator ini akan membantu Anda memahami lebih baik perasaan dan tekanan yang mungkin Anda rasakan. Dengan pemahaman yang lebih baik, Anda dapat mengidentifikasi sumber stres dan mencari solusi.
+        </p>
+        <p>
+            2. Langkah Proaktif: Setelah mendapatkan skor tingkat stres Anda, Anda dapat mengambil langkah-langkah konkret untuk mengurangi stres dan meningkatkan kesejahteraan Anda. Ini bisa termasuk mencari dukungan dari teman, keluarga, atau profesional kesehatan mental.
+        </p>
+        <p>
+            3. Promosi Kesehatan Mental: Kalkulator ini mempromosikan pentingnya perawatan kesehatan mental. Kesehatan mental yang baik adalah aset berharga, dan dengan alat ini, kami ingin membantu Anda menjaga dan meningkatkannya.
+        </p>
+        <h2>
+            Pentingnya Mengelola Stres:
+        </h2>
+        <p>
+            Kami ingin menekankan pentingnya mengelola stres. Stres yang tidak terkendali dapat berdampak negatif pada fisik dan mental Anda. Dengan mengelola stres, Anda dapat meningkatkan kualitas hidup, mengurangi risiko penyakit yang terkait dengan stres, dan mencapai keseimbangan yang lebih baik.
+        </p>
+        <p>
+            Kami ingin menekankan pentingnya mengelola stres. Stres yang tidak terkendali dapat berdampak negatif pada fisik dan mental Anda. Dengan mengelola stres, Anda dapat meningkatkan kualitas hidup, mengurangi risiko penyakit yang terkait dengan stres, dan mencapai keseimbangan yang lebih baik.
+        </p>
+        <br>
+        <br>
+        <form id="mentalHealthCalculator">
+            <div class="question">Pertanyaan 1: Apakah Anda merasa tegang atau gelisah secara teratur selama kuliah atau ujian?</div>
+            <div class="answer">
+                <select name="answer1">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <div class="question">Pertanyaan 2: Apakah Anda mengalami kesulitan tidur atau mengalami insomnia akibat beban akademik?</div>
+            <div class="answer">
+                <select name="answer2">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <div class="question">Pertanyaan 3: Apakah Anda merasa sulit berkonsentrasi atau fokus saat belajar?</div>
+            <div class="answer">
+                <select name="answer3">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <div class="question">Pertanyaan 4: Apakah Anda merasa terlalu banyak tugas atau pekerjaan kuliah yang harus diselesaikan dalam waktu singkat?</div>
+            <div class="answer">
+                <select name="answer3">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <div class="question">Pertanyaan 5: Apakah Anda merasa tertekan oleh persaingan akademik atau perasaan harus selalu berhasil?</div>
+            <div class="answer">
+                <select name="answer3">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <div class="question">Pertanyaan 6: Apakah Anda merasa sulit untuk menjaga keseimbangan antara pekerjaan kuliah dan kehidupan sosial Anda?</div>
+            <div class="answer">
+                <select name="answer3">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <div class="question">Pertanyaan 7: Apakah Anda sering merasa kelelahan atau lelah, bahkan setelah tidur yang cukup?</div>
+            <div class="answer">
+                <select name="answer3">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <div class="question">Pertanyaan 8: Apakah Anda mengalami gejala fisik seperti sakit kepala, mual, atau gangguan pencernaan yang mungkin terkait dengan stres?</div>
+            <div class="answer">
+                <select name="answer3">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <div class="question">Pertanyaan 9: Apakah Anda merasa cemas tentang masa depan atau tekanan untuk memilih karier yang benar?</div>
+            <div class="answer">
+                <select name="answer3">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <div class="question">Pertanyaan 10: Apakah Anda merasa isolasi sosial atau kesepian selama studi Anda?</div>
+            <div class="answer">
+                <select name="answer3">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <div class="question">Pertanyaan 11: Apakah Anda merasa sulit mengatasi tuntutan kuliah dan tugas sehari-hari Anda?</div>
+            <div class="answer">
+                <select name="answer3">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <div class="question">Pertanyaan 12: Apakah Anda merasa khawatir tentang keuangan dan bagaimana Anda akan membayar biaya kuliah?</div>
+            <div class="answer">
+                <select name="answer3">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <div class="question">Pertanyaan 13: Apakah Anda mengalami konflik interpersonal atau masalah dengan teman sekelas atau teman sekamar?</div>
+            <div class="answer">
+                <select name="answer3">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <div class="question">Pertanyaan 14: Apakah Anda merasa tertekan oleh tuntutan ekstrakurikuler atau organisasi mahasiswa?</div>
+            <div class="answer">
+                <select name="answer3">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <div class="question">Pertanyaan 15: Apakah Anda merasa stres tentang ujian besar atau tugas akhir yang mendekat?</div>
+            <div class="answer">
+                <select name="answer3">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <div class="question">Pertanyaan 16: Apakah Anda merasa sulit untuk mengatur waktu atau merasa kewalahan oleh jadwal yang padat?</div>
+            <div class="answer">
+                <select name="answer3">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <div class="question">Pertanyaan 17: Apakah Anda merasa stres tentang berbicara di depan umum atau presentasi?</div>
+            <div class="answer">
+                <select name="answer3">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <div class="question">Pertanyaan 18: Apakah Anda sering merasa marah atau frustrasi selama kuliah?</div>
+            <div class="answer">
+                <select name="answer3">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <div class="question">Pertanyaan 19: Apakah Anda merasa sulit untuk mendapatkan dukungan dari dosen atau staf universitas?</div>
+            <div class="answer">
+                <select name="answer3">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <div class="question">Pertanyaan 20: Apakah Anda merasa terjebak dalam rutinitas dan merasa bosan atau kurang termotivasi?</div>
+            <div class="answer">
+                <select name="answer3">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <div class="question">Pertanyaan 21: Apakah Anda merasa khawatir tentang pekerjaan paruh waktu atau magang selama studi?</div>
+            <div class="answer">
+                <select name="answer3">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <div class="question">Pertanyaan 22: Apakah Anda merasa tertekan oleh tekanan untuk mencapai nilai yang tinggi?</div>
+            <div class="answer">
+                <select name="answer3">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <div class="question">Pertanyaan 23: Apakah Anda merasa sulit untuk melepaskan atau bersantai tanpa merasa bersalah?</div>
+            <div class="answer">
+                <select name="answer3">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <div class="question">Pertanyaan 24: Apakah Anda sering membandingkan diri Anda dengan teman-teman Anda dan merasa kurang berhasil?</div>
+            <div class="answer">
+                <select name="answer3">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <div class="question">Pertanyaan 25: Apakah Anda merasa sulit untuk mencari waktu untuk diri sendiri atau berpartisipasi dalam aktivitas rekreasi?</div>
+            <div class="answer">
+                <select name="answer3">
+                    <option value="">Pilih Opsi</option>
+                    <option value="4">Selalu</option>
+                    <option value="3">Sering</option>
+                    <option value="2">Kadang-kadang</option>
+                    <option value="1">Jarang</option>
+                    <option value="0">Tidak Pernah</option>
+                </select>
+            </div>
+
+            <button type="button" onclick="calculateScore()">Hitung Skor</button>
+        </form>
+
+        <div id="result" style="display: none;">
+            <h2>Hasil Skor Kesehatan Mental Anda:</h2>
+            <p id="score">Skor: </p>
+            <p id="interpretation">Interpretasi: </p>
+        </div>
+    </div>
+
+    <script>
+        function calculateScore() {
+            const form = document.getElementById('mentalHealthCalculator');
+            const answers = form.elements;
+            let totalScore = 0;
+            let validAnswers = 0;
+
+            for (let i = 0; i < answers.length; i++) {
+                if (answers[i].tagName === 'SELECT' && answers[i].value !== "") {
+                    totalScore += parseInt(answers[i].value);
+                    validAnswers++;
+                }
+            }
+
+            const resultDiv = document.getElementById('result');
+            const scoreP = document.getElementById('score');
+            const interpretationP = document.getElementById('interpretation');
+
+            if (validAnswers === 0) {
+                alert("Anda harus memilih setidaknya satu opsi jawaban.");
+                return;
+            }
+
+            // Menghitung pembagian tingkat stres
+            const maxScore = 100;
+            const minScore = 0;
+            const scoreRange = maxScore - minScore;
+            const scorePercentage = (totalScore / (validAnswers * 4)) * 100;
+
+            scoreP.textContent = 'Skor: ' + scorePercentage.toFixed(2) + ' / 100';
+            resultDiv.style.display = 'block';
+
+            if (scorePercentage <= 25) {
+                interpretationP.textContent = 'Anda dalam kondisi kesehatan mental yang baik.';
+            } else if (scorePercentage <= 50) {
+                interpretationP.textContent = 'Anda berada dalam kondisi kesehatan mental yang cukup. Pertimbangkan untuk mencari dukungan jika perlu.';
+            } else if (scorePercentage <= 75) {
+                interpretationP.textContent = 'Anda mungkin mengalami stres atau masalah kesehatan mental yang signifikan. Pertimbangkan untuk mencari bantuan profesional.';
+            } else {
+                interpretationP.textContent = 'Anda mengalami stres atau masalah kesehatan mental yang sangat memprihatinkan. Pertimbangkan untuk segera mencari bantuan profesional.';
+            }
+        }
+    </script>
+</body>
+</html>
